@@ -103,7 +103,7 @@ h6 {
     /* 添加黑色描边效果 */
     border-radius: 4px;
     /* 添加超小的圆角矩形 */
-    font-family: 'YourCustomFont', Arial, sans-serif;
+    font-family: 'NotoSansSC', Arial, sans-serif;
     /* 使用自定义字体，如果不存在则使用 Arial 字体，最后使用系统默认 sans-serif 字体作为备选 */
 }
 
