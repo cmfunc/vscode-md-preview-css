@@ -1,3 +1,36 @@
+/* 引入本地的 TrueType 字体文件 */
+@font-face {
+    font-family: 'YourCustomFont';
+    /* 定义字体名称 */
+    src: url('fonts/FangZhengKaiTiJianTi-1.ttf') format('truetype');
+    /* 指定字体文件路径和格式 */
+    /* 可以添加其他字体属性，如 font-weight、font-style 等 */
+}
+
+@font-face {
+    font-family: 'MaShanZheng';
+    /* 定义字体名称 */
+    src: url('fonts/MaShanZheng-Regular.ttf') format('truetype');
+    /* 指定字体文件路径和格式 */
+    /* 可以添加其他字体属性，如 font-weight、font-style 等 */
+}
+
+@font-face {
+    font-family: 'NotoSansSC';
+    /* 定义字体名称 */
+    src: url('fonts/NotoSansSC-VariableFont_wght.ttf') format('truetype');
+    /* 指定字体文件路径和格式 */
+    /* 可以添加其他字体属性，如 font-weight、font-style 等 */
+}
+
+@font-face {
+    font-family: 'HYKongShanKaiW';
+    /* 定义字体名称 */
+    src: url('fonts/HYKongShanKaiW.ttf') format('truetype');
+    /* 指定字体文件路径和格式 */
+    /* 可以添加其他字体属性，如 font-weight、font-style 等 */
+}
+
 /* Markdown 背景样式 */
 body {
     color: #000000;
@@ -10,6 +43,8 @@ body {
     /* 背景图片重复 */
     background-size: 50%;
     /* 将背景图片大小缩小为原来的一半 */
+    font-family: 'HYKongShanKaiW', Arial, sans-serif;
+    /* 使用自定义字体，如果不存在则使用 Arial 字体，最后使用系统默认 sans-serif 字体作为备选 */
 }
 
 /* Markdown 背景样式 */
@@ -68,4 +103,48 @@ h6 {
     /* 添加黑色描边效果 */
     border-radius: 4px;
     /* 添加超小的圆角矩形 */
+    font-family: 'YourCustomFont', Arial, sans-serif;
+    /* 使用自定义字体，如果不存在则使用 Arial 字体，最后使用系统默认 sans-serif 字体作为备选 */
+}
+
+table {
+    padding: 0;
+    word-break: initial;
+}
+
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+
+table tr:nth-child(1n),
+thead {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    /* 添加模糊效果，值可以根据需要调整 */
+}
+
+table th {
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+
+table td {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 0;
+    padding: 6px 13px;
+}
+
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
 }
